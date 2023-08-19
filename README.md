@@ -4,4 +4,5 @@
 <a href="https://codeclimate.com/github/KirillTheStranger/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/ba1913bdbdfb11c42934/maintainability" /></a>
 
 <h2>Brain-games tutorial</h2>
-[Brain-even game](<a href="https://asciinema.org/a/rbmzOo12G4gkRyJv0khBNhrS3" target="_blank"><img src="https://asciinema.org/a/rbmzOo12G4gkRyJv0khBNhrS3.svg" /></a>)
+<h3>Brain-even game</h3>
+<a href="https://asciinema.org/a/rbmzOo12G4gkRyJv0khBNhrS3" target="_blank"><img src="https://asciinema.org/a/rbmzOo12G4gkRyJv0khBNhrS3.svg" /></a>
