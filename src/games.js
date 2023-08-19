@@ -18,7 +18,7 @@ const isNumberEven = () => {
 
   const secondAnswer = readlineSync.question(`Question: ${evenNumbers[1]}\nYour answer: `);
   if (secondAnswer !== 'no') {
-    console.log(`'${firstAnswer}' is wrong answer ;(. Correct answer was 'no'.`);
+    console.log(`'${secondAnswer}' is wrong answer ;(. Correct answer was 'no'.`);
     return console.log(`Let's try again, ${userName}`);
   }
 
@@ -26,7 +26,7 @@ const isNumberEven = () => {
 
   const thirdAnswer = readlineSync.question(`Question: ${evenNumbers[2]}\nYour answer: `);
   if (thirdAnswer !== 'yes') {
-    console.log(`'${firstAnswer}' is wrong answer ;(. Correct answer was 'yes'.`);
+    console.log(`'${thirdAnswer}' is wrong answer ;(. Correct answer was 'yes'.`);
     return console.log(`Let's try again, ${userName}`);
   }
 
