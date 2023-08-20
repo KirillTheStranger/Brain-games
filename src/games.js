@@ -1,32 +1,55 @@
 import readlineSync from 'readline-sync';
 
 const isNumberEven = () => {
-  const evenNumbers = [186, 593, 778];
+  const isEven = (number) => {
+    if (number % 2 === 0) {
+      return true;
+    }
+
+    return false;
+  };
+
+  const randomNumber = () => Math.round((Math.random() * 100));
+  let currentRandomNumber = randomNumber();
 
   const userName = readlineSync.question('May i have your name? ');
   console.log(`Hello, ${userName}!`);
 
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
-  const firstAnswer = readlineSync.question(`Question: ${evenNumbers[0]}\nYour answer: `);
-  if (firstAnswer !== 'yes') {
+  const firstAnswer = readlineSync.question(`Question: ${currentRandomNumber}\nYour answer: `);
+  if (isEven(currentRandomNumber) && firstAnswer !== 'yes') {
     console.log(`'${firstAnswer}' is wrong answer ;(. Correct answer was 'yes'.`);
+    return console.log(`Let's try again, ${userName}`);
+  }
+  if (!isEven(currentRandomNumber) && firstAnswer !== 'no') {
+    console.log(`'${firstAnswer}' is wrong answer ;(. Correct answer was 'no'.`);
     return console.log(`Let's try again, ${userName}`);
   }
 
   console.log('Correct!');
+  currentRandomNumber = randomNumber();
 
-  const secondAnswer = readlineSync.question(`Question: ${evenNumbers[1]}\nYour answer: `);
-  if (secondAnswer !== 'no') {
+  const secondAnswer = readlineSync.question(`Question: ${currentRandomNumber}\nYour answer: `);
+  if (isEven(currentRandomNumber) && secondAnswer !== 'yes') {
+    console.log(`'${secondAnswer}' is wrong answer ;(. Correct answer was 'yes'.`);
+    return console.log(`Let's try again, ${userName}`);
+  }
+  if (!isEven(currentRandomNumber) && secondAnswer !== 'no') {
     console.log(`'${secondAnswer}' is wrong answer ;(. Correct answer was 'no'.`);
     return console.log(`Let's try again, ${userName}`);
   }
 
   console.log('Correct!');
+  currentRandomNumber = randomNumber();
 
-  const thirdAnswer = readlineSync.question(`Question: ${evenNumbers[2]}\nYour answer: `);
-  if (thirdAnswer !== 'yes') {
+  const thirdAnswer = readlineSync.question(`Question: ${currentRandomNumber}\nYour answer: `);
+  if (isEven(currentRandomNumber) && thirdAnswer !== 'yes') {
     console.log(`'${thirdAnswer}' is wrong answer ;(. Correct answer was 'yes'.`);
+    return console.log(`Let's try again, ${userName}`);
+  }
+  if (!isEven(currentRandomNumber) && thirdAnswer !== 'no') {
+    console.log(`'${thirdAnswer}' is wrong answer ;(. Correct answer was 'no'.`);
     return console.log(`Let's try again, ${userName}`);
   }
 
