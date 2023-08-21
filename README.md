@@ -9,3 +9,6 @@
 
 <h2>Brain-calc game</h2>
 <a href="https://asciinema.org/a/hArGlMJmbhSK8fKVZ8pywQSyJ" target="_blank"><img src="https://asciinema.org/a/hArGlMJmbhSK8fKVZ8pywQSyJ.svg" /></a>
+
+<h2>Brain-gcd game</h2>
+<a href="https://asciinema.org/a/H7fcJ2KhsMoTxCJPZM28QJLmC" target="_blank"><img src="https://asciinema.org/a/H7fcJ2KhsMoTxCJPZM28QJLmC.svg" /></a>
