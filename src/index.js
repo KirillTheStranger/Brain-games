@@ -13,7 +13,7 @@ const gameLogic = (rules, task, rightAnswer) => {
     if (answer === rightAnswer[i]) {
       console.log('Correct!');
     } else {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was ${rightAnswer[i]}.`);
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${rightAnswer[i]}'.`);
       return console.log(`Let's try again, ${userName}`);
     }
   }
