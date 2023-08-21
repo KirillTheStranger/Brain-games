@@ -6,3 +6,6 @@
 <h2>Brain-games tutorial</h2>
 <h3>Brain-even game</h3>
 <a href="https://asciinema.org/a/30JkI98qAUSUQjcpq4D0ol5u5" target="_blank"><img src="https://asciinema.org/a/30JkI98qAUSUQjcpq4D0ol5u5.svg" /></a>
+
+<h2>Brain-calc game</h2>
+<a href="https://asciinema.org/a/hArGlMJmbhSK8fKVZ8pywQSyJ" target="_blank"><img src="https://asciinema.org/a/hArGlMJmbhSK8fKVZ8pywQSyJ.svg" /></a>
