@@ -1,7 +1,10 @@
 #!/usr/bin/env node
 
-import isNumberEven from '../src/games.js';
+import gameLogic from '../src/index.js';
 
-console.log('Welcome to the Brain Games!');
+export const randomNumber = () => Math.round((Math.random() * 100));
+export let currentRandomNumber = Math.round((Math.random() * 100));
+export const gameQuestion = `Question: ${currentRandomNumber}\nYour answer: `;
+export const rightAnswer = currentRandomNumber % 2 === 0 ? 'yes' : 'no';
 
-isNumberEven();
+gameLogic();
