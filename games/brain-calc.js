@@ -17,12 +17,12 @@ const makeExpression = () => {
 };
 const task = makeExpression();
 
-const getRightAnswer = (arr) => {
+const getRightAnswer = (array) => {
   const tempResult = [];
 
-  for (let i = 0; i < arr.length; i += 1) {
-    const arrOfElements = arr[i].split(' ');
-    tempResult.push(arrOfElements);
+  for (let i = 0; i < array.length; i += 1) {
+    const arrayOfElems = array[i].split(' ');
+    tempResult.push(arrayOfElems);
   }
 
   const endResult = [];
