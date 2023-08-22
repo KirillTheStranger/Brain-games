@@ -2,7 +2,7 @@
 
 import gameLogic from '../src/index.js';
 
-const rules = 'What is the result of the expression?';
+const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const randomNumber = () => Math.round((Math.random() * 30));
 
