@@ -12,3 +12,6 @@
 
 <h2>Brain-gcd game</h2>
 <a href="https://asciinema.org/a/H7fcJ2KhsMoTxCJPZM28QJLmC" target="_blank"><img src="https://asciinema.org/a/H7fcJ2KhsMoTxCJPZM28QJLmC.svg" /></a>
+
+<h2>Brain-progression game</h2>
+<a href="https://asciinema.org/a/sgDKlGhe69OOYIJKGRkcg2gwl" target="_blank"><img src="https://asciinema.org/a/sgDKlGhe69OOYIJKGRkcg2gwl.svg" /></a>
