@@ -4,7 +4,7 @@
   "description": "Brain games project",
   "type": "module",
   "bin": {
-    "brain-games": "games/brain-games.js",
+    "brain-games": "bin/brain-games.js",
     "brain-even": "games/brain-even.js",
     "brain-calc": "games/brain-calc.js",
     "brain-gcd": "games/brain-gcd.js",
