@@ -5,8 +5,10 @@ const description = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 const generateRound = () => {
   const pair = [];
-  pair.push(randomNumber());
-  pair.push(isEven(pair[0]) ? 'yes' : 'no');
+  const question = randomNumber();
+  pair.push(question);
+  const answer = isEven(pair[0]) ? 'yes' : 'no';
+  pair.push(answer);
 
   return pair;
 };

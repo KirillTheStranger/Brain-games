@@ -5,8 +5,10 @@ const description = 'Answer "yes" if given number is prime. Otherwise answer "no
 
 const generateRound = () => {
   const pair = [];
-  pair.push(randomNumber() + 3);
-  pair.push(isPrime(pair[0]) ? 'yes' : 'no');
+  const question = randomNumber() * 13;
+  pair.push(question);
+  const answer = isPrime(pair[0]) ? 'yes' : 'no';
+  pair.push(answer);
 
   return pair;
 };
