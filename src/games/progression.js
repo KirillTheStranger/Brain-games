@@ -13,7 +13,7 @@ const makeExpression = () => {
     const randomEmptySpot = randomNumber();
     const randomStartNumber = randomNumber();
     const randomIndex = randomNumber();
-    for (let k = 0, j = randomStartNumber; k < 10; k += 1, j += randomIndex) {
+    for (let k = 1, j = randomStartNumber; k <= 10; k += 1, j += randomIndex) {
       if (k === randomEmptySpot) {
         elementOfTask = `${elementOfTask} ${emptySpot}`;
         elementOfAnswer = `${j}`;
