@@ -1,9 +1,9 @@
 import gameLogic from '../index.js';
+import { randomNumber } from '../helpers.js';
 
 const description = 'What is the result of the expression?';
 
 const operators = ['-', '*', '+'];
-const randomNumber = () => Math.round((Math.random() * 20));
 const randomOperator = () => operators[Math.floor(Math.random() * 3)];
 
 const makeExpression = () => {
@@ -46,7 +46,7 @@ const getRightAnswer = (array) => {
 const rightAnswer = getRightAnswer(task);
 
 const calcGame = () => {
-    gameLogic(description, task, rightAnswer);
+  gameLogic(description, task, rightAnswer);
 };
 
 export default calcGame;
