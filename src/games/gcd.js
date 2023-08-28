@@ -3,16 +3,7 @@ import getRandomNumber from '../helpers.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
-const generateRound = () => {
-  const min = 1;
-  const max = 100;
-  const number1 = getRandomNumber(min, max);
-  const number2 = getRandomNumber(min, max);
-
-  const pair = [];
-  const question = `${number1} ${number2}`;
-  pair.push(question);
-
+const getGcd = (number1, number2) => {
   let minNumber = number1;
   if (number2 < number1) {
     minNumber = number2;
@@ -24,10 +15,17 @@ const generateRound = () => {
       maxDivider = i;
     }
   }
-  const answer = maxDivider.toString();
-  pair.push(answer);
+  return maxDivider.toString();
+};
 
-  return pair;
+const generateRound = () => {
+  const number1 = getRandomNumber(10, 100);
+  const number2 = getRandomNumber(10, 100);
+
+  const question = `${number1} ${number2}`;
+  const answer = getGcd(number1, number2);
+
+  return [question, answer];
 };
 
 const runGcdGame = () => {

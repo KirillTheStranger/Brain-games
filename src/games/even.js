@@ -11,16 +11,10 @@ const isEven = (number) => {
 };
 
 const generateRound = () => {
-  const min = 1;
-  const max = 100;
-  const question = getRandomNumber(min, max);
+  const question = getRandomNumber(1, 100);
+  const answer = isEven(question) ? 'yes' : 'no';
 
-  const pair = [];
-  pair.push(question);
-  const answer = isEven(pair[0]) ? 'yes' : 'no';
-  pair.push(answer);
-
-  return pair;
+  return [question, answer];
 };
 
 const runEvenGame = () => {

@@ -3,29 +3,28 @@ import getRandomNumber from '../helpers.js';
 
 const description = 'What number is missing in the progression?';
 
-const generateRound = () => {
-  const min = 1;
-  const max = 10;
-  const randomEmptySpotPosition = getRandomNumber(min, max);
-  const randomStartNumber = getRandomNumber(min, max) * 3;
-  const randomStepOfProgression = getRandomNumber(min, max);
-  const emptySpot = '..';
-
-  const pair = [];
+const makeProgression = (startNumber, stepOfProg, emptySpotPos, emptySpotValue) => {
   let question = '';
   let answer = '';
-  for (let i = 1, j = randomStartNumber; i <= 10; i += 1, j += randomStepOfProgression) {
-    if (i === randomEmptySpotPosition) {
-      question = `${question} ${emptySpot}`;
+  for (let i = 1, j = startNumber; i <= 10; i += 1, j += stepOfProg) {
+    if (i === emptySpotPos) {
+      question = `${question} ${emptySpotValue}`;
       answer = `${j}`;
     } else {
       question = `${question} ${j}`;
     }
   }
-  pair.push(question.trim());
-  pair.push(answer);
+  return [question.trim(), answer];
+};
 
-  return pair;
+const generateRound = () => {
+  const emptySpotPos = getRandomNumber(1, 10);
+  const startNumber = getRandomNumber(3, 30);
+  const stepOfProg = getRandomNumber(1, 10);
+  const emptySpotValue = '..';
+
+  const [question, answer] = makeProgression(startNumber, stepOfProg, emptySpotPos, emptySpotValue);
+  return [question, answer];
 };
 
 const runProgressionGame = () => {
