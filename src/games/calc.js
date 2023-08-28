@@ -1,4 +1,4 @@
-import gameLogic from '../index.js';
+import startGameLogic from '../index.js';
 import { randomNumber } from '../helpers.js';
 
 const description = 'What is the result of the expression?';
@@ -29,8 +29,8 @@ const generateRound = () => {
   return pair;
 };
 
-const calcGame = () => {
-  gameLogic(description, generateRound);
+const runCalcGame = () => {
+  startGameLogic(description, generateRound);
 };
 
-export default calcGame;
+export default runCalcGame;
