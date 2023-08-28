@@ -1,4 +1,4 @@
-import gameLogic from '../index.js';
+import startGameLogic from '../index.js';
 import { isEven, randomNumber } from '../helpers.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -13,8 +13,8 @@ const generateRound = () => {
   return pair;
 };
 
-const evenGame = () => {
-  gameLogic(description, generateRound);
+const runEvenGame = () => {
+  startGameLogic(description, generateRound);
 };
 
-export default evenGame;
+export default runEvenGame;
