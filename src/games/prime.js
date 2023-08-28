@@ -13,8 +13,11 @@ const isPrime = (number) => {
 };
 
 const generateRound = () => {
+  const min = 3;
+  const max = 100;
+  const question = randomNumber(min, max);
+
   const pair = [];
-  const question = randomNumber() * 13;
   pair.push(question);
   const answer = isPrime(pair[0]) ? 'yes' : 'no';
   pair.push(answer);

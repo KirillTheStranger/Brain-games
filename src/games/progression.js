@@ -4,9 +4,11 @@ import randomNumber from '../helpers.js';
 const description = 'What number is missing in the progression?';
 
 const generateRound = () => {
-  const randomEmptySpotPosition = randomNumber();
-  const randomStartNumber = randomNumber() * 3;
-  const randomStepOfProgression = randomNumber();
+  const min = 1;
+  const max = 10;
+  const randomEmptySpotPosition = randomNumber(min, max);
+  const randomStartNumber = randomNumber(min, max) * 3;
+  const randomStepOfProgression = randomNumber(min, max);
   const emptySpot = '..';
 
   const pair = [];

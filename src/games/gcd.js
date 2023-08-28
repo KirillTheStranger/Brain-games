@@ -4,20 +4,23 @@ import randomNumber from '../helpers.js';
 const description = 'Find the greatest common divisor of given numbers.';
 
 const generateRound = () => {
-  const firstRandomNumber = randomNumber() * 7;
-  const secondRandomNumber = randomNumber() + 11;
+  const min = 1;
+  const max = 100;
+  const number1 = randomNumber(min, max);
+  const number2 = randomNumber(min, max);
+
   const pair = [];
-  const question = `${firstRandomNumber} ${secondRandomNumber}`;
+  const question = `${number1} ${number2}`;
   pair.push(question);
 
-  let minNumber = firstRandomNumber;
-  if (secondRandomNumber < firstRandomNumber) {
-    minNumber = secondRandomNumber;
+  let minNumber = number1;
+  if (number2 < number1) {
+    minNumber = number2;
   }
 
   let maxDivider;
   for (let i = 1; i <= minNumber; i += 1) {
-    if (firstRandomNumber % i === 0 && secondRandomNumber % i === 0) {
+    if (number1 % i === 0 && number2 % i === 0) {
       maxDivider = i;
     }
   }

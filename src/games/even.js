@@ -11,8 +11,11 @@ const isEven = (number) => {
 };
 
 const generateRound = () => {
+  const min = 1;
+  const max = 100;
+  const question = randomNumber(min, max);
+
   const pair = [];
-  const question = randomNumber();
   pair.push(question);
   const answer = isEven(pair[0]) ? 'yes' : 'no';
   pair.push(answer);
