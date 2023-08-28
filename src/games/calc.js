@@ -3,32 +3,35 @@ import getRandomNumber from '../helpers.js';
 
 const description = 'What is the result of the expression?';
 
+const calculate = (number1, number2, randomOperator, operators) => {
+  let result;
+  switch (randomOperator) {
+    case operators[0]:
+      result = (number1 - number2).toString();
+      break;
+    case operators[1]:
+      result = (number1 * number2).toString();
+      break;
+    case operators[2]:
+      result = (number1 + number2).toString();
+      break;
+    default:
+      result = `Watch out of unknown operator: ${randomOperator}`;
+  }
+  return result;
+};
+
 const generateRound = () => {
   const operators = ['-', '*', '+'];
-  const randomOperator = operators[Math.floor(Math.random() * 3)];
-  const min = 1;
-  const max = 20;
-  const number1 = getRandomNumber(min, max);
-  const number2 = getRandomNumber(min, max);
-
-  const pair = [];
+  const randomOperator = operators[getRandomNumber(0, 2)];
+  const number1 = getRandomNumber(1, 20);
+  const number2 = getRandomNumber(1, 20);
 
   const question = `${number1} ${randomOperator} ${number2}`;
-  pair.push(question);
 
-  let answer;
-  if (randomOperator === operators[0]) {
-    answer = (number1 - number2).toString();
-    pair.push(answer);
-  } else if (randomOperator === operators[1]) {
-    answer = (number1 * number2).toString();
-    pair.push(answer);
-  } else if (randomOperator === operators[2]) {
-    answer = (number1 + number2).toString();
-    pair.push(answer);
-  }
+  const answer = calculate(number1, number2, randomOperator, operators);
 
-  return pair;
+  return [question, answer];
 };
 
 const runCalcGame = () => {
