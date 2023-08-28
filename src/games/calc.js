@@ -1,5 +1,5 @@
 import startGameLogic from '../index.js';
-import { randomNumber } from '../helpers.js';
+import randomNumber from '../helpers.js';
 
 const description = 'What is the result of the expression?';
 
