@@ -1,4 +1,4 @@
-import gameLogic from '../index.js';
+import startGameLogic from '../index.js';
 import { randomNumber } from '../helpers.js';
 
 const description = 'What number is missing in the progression?';
@@ -26,8 +26,8 @@ const generateRound = () => {
   return pair;
 };
 
-const progressionGame = () => {
-  gameLogic(description, generateRound);
+const runProgressionGame = () => {
+  startGameLogic(description, generateRound);
 };
 
-export default progressionGame;
+export default runProgressionGame;
