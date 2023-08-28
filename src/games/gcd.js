@@ -1,4 +1,4 @@
-import gameLogic from '../index.js';
+import startGameLogic from '../index.js';
 import { randomNumber } from '../helpers.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
@@ -27,8 +27,8 @@ const generateRound = () => {
   return pair;
 };
 
-const gcdGame = () => {
-  gameLogic(description, generateRound);
+const runGcdGame = () => {
+  startGameLogic(description, generateRound);
 };
 
-export default gcdGame;
+export default runGcdGame;
