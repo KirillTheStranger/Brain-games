@@ -1,13 +1,13 @@
 import startGameLogic from '../index.js';
-import randomNumber from '../helpers.js';
+import getRandomNumber from '../helpers.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
 const generateRound = () => {
   const min = 1;
   const max = 100;
-  const number1 = randomNumber(min, max);
-  const number2 = randomNumber(min, max);
+  const number1 = getRandomNumber(min, max);
+  const number2 = getRandomNumber(min, max);
 
   const pair = [];
   const question = `${number1} ${number2}`;

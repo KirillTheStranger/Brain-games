@@ -1,14 +1,14 @@
 import startGameLogic from '../index.js';
-import randomNumber from '../helpers.js';
+import getRandomNumber from '../helpers.js';
 
 const description = 'What number is missing in the progression?';
 
 const generateRound = () => {
   const min = 1;
   const max = 10;
-  const randomEmptySpotPosition = randomNumber(min, max);
-  const randomStartNumber = randomNumber(min, max) * 3;
-  const randomStepOfProgression = randomNumber(min, max);
+  const randomEmptySpotPosition = getRandomNumber(min, max);
+  const randomStartNumber = getRandomNumber(min, max) * 3;
+  const randomStepOfProgression = getRandomNumber(min, max);
   const emptySpot = '..';
 
   const pair = [];

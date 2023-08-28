@@ -1,5 +1,5 @@
 import startGameLogic from '../index.js';
-import randomNumber from '../helpers.js';
+import getRandomNumber from '../helpers.js';
 
 const description = 'What is the result of the expression?';
 
@@ -8,8 +8,8 @@ const generateRound = () => {
   const randomOperator = operators[Math.floor(Math.random() * 3)];
   const min = 1;
   const max = 20;
-  const number1 = randomNumber(min, max);
-  const number2 = randomNumber(min, max);
+  const number1 = getRandomNumber(min, max);
+  const number2 = getRandomNumber(min, max);
 
   const pair = [];
 

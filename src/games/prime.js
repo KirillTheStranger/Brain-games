@@ -1,5 +1,5 @@
 import startGameLogic from '../index.js';
-import randomNumber from '../helpers.js';
+import getRandomNumber from '../helpers.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -15,7 +15,7 @@ const isPrime = (number) => {
 const generateRound = () => {
   const min = 3;
   const max = 100;
-  const question = randomNumber(min, max);
+  const question = getRandomNumber(min, max);
 
   const pair = [];
   pair.push(question);
