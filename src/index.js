@@ -11,7 +11,8 @@ const startGameLogic = (description, generateRound) => {
 
   for (let i = 1; i <= roundsCount; i += 1) {
     const [task, rightAnswer] = generateRound();
-    const answer = readlineSync.question(`Question: ${task}\nYour answer: `);
+    console.log(`Question: ${task}`);
+    const answer = readlineSync.question('Your answer: ');
 
     if (answer !== rightAnswer) {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.`);

@@ -3,33 +3,35 @@ import getRandomNumber from '../helpers.js';
 
 const description = 'What is the result of the expression?';
 
-const calculate = (number1, number2, randomOperator, operators) => {
+const calculate = (number1, number2, operator) => {
   let result;
-  switch (randomOperator) {
-    case operators[0]:
-      result = (number1 - number2).toString();
+  switch (operator) {
+    case '-':
+      result = number1 - number2;
       break;
-    case operators[1]:
-      result = (number1 * number2).toString();
+    case '*':
+      result = number1 * number2;
       break;
-    case operators[2]:
-      result = (number1 + number2).toString();
+    case '+':
+      result = number1 + number2;
       break;
     default:
-      result = `Watch out of unknown operator: ${randomOperator}`;
+      result = `Watch out of unknown operator: ${operator}`;
   }
   return result;
 };
 
 const generateRound = () => {
   const operators = ['-', '*', '+'];
-  const randomOperator = operators[getRandomNumber(0, 2)];
+  const randomIndex = getRandomNumber(0, operators.length - 1);
+  const randomOperator = operators[randomIndex];
+
   const number1 = getRandomNumber(1, 20);
   const number2 = getRandomNumber(1, 20);
 
   const question = `${number1} ${randomOperator} ${number2}`;
 
-  const answer = calculate(number1, number2, randomOperator, operators);
+  const answer = calculate(number1, number2, randomOperator).toString();
 
   return [question, answer];
 };
