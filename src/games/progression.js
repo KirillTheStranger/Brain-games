@@ -19,7 +19,7 @@ const generateRound = () => {
 
   const progression = makeProgression(startNumber, stepOfProg);
 
-  const emptySpotPos = getRandomNumber(1, 10);
+  const emptySpotPos = getRandomNumber(0, 9);
   const emptySpotValue = '..';
 
   let question = '';
