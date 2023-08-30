@@ -26,16 +26,16 @@ make install
     * **brain-prime** - starts the game, in which you need to tell is the number prime
 
 ### Brain-even game
-<a href="https://asciinema.org/a/30JkI98qAUSUQjcpq4D0ol5u5" target="_blank"><img src="https://asciinema.org/a/30JkI98qAUSUQjcpq4D0ol5u5.svg" /></a>
+<a href="https://asciinema.org/a/Xwau73tfJ34KPq8F70u6bbD5t" target="_blank"><img src="https://asciinema.org/a/Xwau73tfJ34KPq8F70u6bbD5t.svg" /></a>
 
 ### Brain-calc game
-<a href="https://asciinema.org/a/hArGlMJmbhSK8fKVZ8pywQSyJ" target="_blank"><img src="https://asciinema.org/a/hArGlMJmbhSK8fKVZ8pywQSyJ.svg" /></a>
+<a href="https://asciinema.org/a/A23ryllVC1c2fCxKFExDgfv9z" target="_blank"><img src="https://asciinema.org/a/A23ryllVC1c2fCxKFExDgfv9z.svg" /></a>
 
 ### Brain-gcd game
-<a href="https://asciinema.org/a/H7fcJ2KhsMoTxCJPZM28QJLmC" target="_blank"><img src="https://asciinema.org/a/H7fcJ2KhsMoTxCJPZM28QJLmC.svg" /></a>
+<a href="https://asciinema.org/a/b6IRWfa282Bx51ERLEdN4qXSd" target="_blank"><img src="https://asciinema.org/a/b6IRWfa282Bx51ERLEdN4qXSd.svg" /></a>
 
 ### Brain-progression game
-<a href="https://asciinema.org/a/sgDKlGhe69OOYIJKGRkcg2gwl" target="_blank"><img src="https://asciinema.org/a/sgDKlGhe69OOYIJKGRkcg2gwl.svg" /></a>
+<a href="https://asciinema.org/a/OFOsqDcL6SKmpca1EbjA1Bi1n" target="_blank"><img src="https://asciinema.org/a/OFOsqDcL6SKmpca1EbjA1Bi1n.svg" /></a>
 
 ### Brain-prime game
-<a href="https://asciinema.org/a/Y2jBHxXfrIbDseMfDmqxYWcG3" target="_blank"><img src="https://asciinema.org/a/Y2jBHxXfrIbDseMfDmqxYWcG3.svg" /></a>
+<a href="https://asciinema.org/a/Ps415dccFL2rgChyBLZhbPgq5" target="_blank"><img src="https://asciinema.org/a/Ps415dccFL2rgChyBLZhbPgq5.svg" /></a>
