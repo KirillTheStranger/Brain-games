@@ -3,9 +3,9 @@ import getRandomNumber from '../helpers.js';
 
 const description = 'What number is missing in the progression?';
 
-const makeProgression = (startNumber, stepOfProg) => {
+const makeProgression = (startNumber, stepOfProg, progressionLength) => {
   const progression = [];
-  const progressionLength = 10;
+
   for (let i = 1, j = startNumber; i <= progressionLength; i += 1, j += stepOfProg) {
     progression.push(`${j}`);
   }
@@ -16,24 +16,18 @@ const makeProgression = (startNumber, stepOfProg) => {
 const generateRound = () => {
   const startNumber = getRandomNumber(3, 30);
   const stepOfProg = getRandomNumber(1, 10);
+  const progressionLength = 10;
 
-  const progression = makeProgression(startNumber, stepOfProg);
+  const progression = makeProgression(startNumber, stepOfProg, progressionLength);
 
-  const emptySpotPos = getRandomNumber(0, 9);
+  const hiddenIndex = getRandomNumber(0, progression.length - 1);
   const emptySpotValue = '..';
 
-  let question = '';
-  let answer = '';
-  for (let i = 0; i < progression.length; i += 1) {
-    if (i === emptySpotPos) {
-      question = `${question} ${emptySpotValue}`;
-      answer = progression[i];
-    } else {
-      question = `${question} ${progression[i]}`;
-    }
-  }
+  const answer = progression[hiddenIndex];
+  const question = progression;
+  question[hiddenIndex] = emptySpotValue;
 
-  return [question.trim(), answer];
+  return [question.join(' '), answer];
 };
 
 const runProgressionGame = () => {

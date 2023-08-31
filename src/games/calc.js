@@ -4,21 +4,16 @@ import getRandomNumber from '../helpers.js';
 const description = 'What is the result of the expression?';
 
 const calculate = (number1, number2, operator) => {
-  let result;
   switch (operator) {
     case '-':
-      result = number1 - number2;
-      break;
+      return number1 - number2;
     case '*':
-      result = number1 * number2;
-      break;
+      return number1 * number2;
     case '+':
-      result = number1 + number2;
-      break;
+      return number1 + number2;
     default:
-      result = `Watch out of unknown operator: ${operator}`;
+      return `Watch out of unknown operator: ${operator}`;
   }
-  return result;
 };
 
 const generateRound = () => {
